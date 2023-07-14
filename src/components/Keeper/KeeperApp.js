@@ -20,10 +20,8 @@ function KeeperApp() {
 	}
 
 	return (
-		<>
-		
+		<>		
 			<div className="keeperBody">
-
 				<CreateArea onAdd={addNote} />
 				{notes.map((noteItem, index) => {
 					return (
@@ -36,7 +34,6 @@ function KeeperApp() {
 						/>
 					);
 				})}
-
 			</div>			
 		</>
 	);

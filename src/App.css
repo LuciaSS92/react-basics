@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0 16px;
+  background-color: white;
+  background-color: #fcfffd;
+  background-image: url("https://www.transparenttextures.com/patterns/soft-circle-scales.png");
+}
+
 header {
-  background-color: #79c7ad;
+  background-color: #f7d060;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -18,11 +25,11 @@ header h1 {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   text-align: center;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
+  height: 2.5rem;  
 }
 
 footer p {
@@ -32,11 +39,9 @@ footer p {
 /* KEEPER APP */
 
 .keeperBody {
-  background: #eee;
-  padding: 0 16px;
-  background-color: white;
-  /* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
+  font-family: "Montserrat", sans-serif;
 }
+
 .note {
   background: #fff;
   border-radius: 7px;
@@ -61,7 +66,7 @@ footer p {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #79c7ad;
+  color: #ff6d60;
   border: none;
   width: 36px;
   height: 36px;
@@ -93,7 +98,7 @@ form.create-note button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #79c7ad;
+  background: #f3e99f;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -101,27 +106,25 @@ form.create-note button {
   height: 36px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  outline: none;  
+  outline: none;
 }
 
 /* TO DO LIST APP */
 
-.todoBody{
-  
-    /* background-color: #ffeaa7; */
-    min-height: 70vh;
-    padding: 1rem;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: hsl(198, 1%, 29%);
-    font-family: "Architects Daughter", cursive;
-    text-align: center;
-    font-size: 130%;    
+.todoBody { 
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(198, 1%, 29%);
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  font-size: 130%;
 }
 
-.container {
+.todoContainer {
   width: 100%;
   height: auto;
   min-height: 500px;
@@ -135,28 +138,29 @@ form.create-note button {
   padding: 1rem;
   box-sizing: border-box;
 }
-.heading {
+.todoHeading {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
 }
-.heading h1 {
+
+.todoHeading h1 {
   transform: rotate(2deg);
   padding: 0.2rem 1.2rem;
   border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
-  background-color: #fdcb6e;
+  background-color: #f7d060;
   font-size: 1.5rem;
 }
 
-.form input {
+.todoForm input {
   box-sizing: border-box;
   background-color: transparent;
   padding: 0.7rem;
   border-bottom-right-radius: 15px 3px;
   border-bottom-left-radius: 3px 15px;
   border: solid 3px transparent;
-  border-bottom: dashed 3px #fdcb6e;
+  border-bottom: dashed 3px #f7d060;
   font-family: "Architects Daughter", cursive;
   font-size: 1rem;
   color: hsla(260, 2%, 25%, 0.7);
@@ -164,41 +168,43 @@ form.create-note button {
   margin-bottom: 20px;
 }
 
-button {
+.todoButton {
   padding: 0;
   border: none;
   font-family: "Architects Daughter", cursive;
   text-decoration: none;
   padding-bottom: 3px;
   border-radius: 5px;
-  background-color: #ffeaa7;
+  background-color: #F3E99F;
 }
-button span {
+.todoButton span {
   background: #f1f5f8;
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: 2px solid hsl(198, 1%, 29%);
+  cursor: pointer;
 }
 
-li {
+.todoLi {
   text-align: left;
   position: relative;
   padding: 0.5rem;
+  margin-left: 2rem;
+  box-sizing: content-box;
 }
 
+/* EMOJIPEDIA */
 
-  /* EMOJIPEDIA */
+.emojiBody {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.666;
+  background: #c0d2d4;
+  color: #555;
+}
 
-  .emojiBody {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    line-height: 1.666;
-    background: #c0d2d4;
-    color: #555;
-  }
-  
-  /* h1 {
+/* h1 {
     font-weight: 900;
     font-size: 500%;
     text-align: center;
@@ -211,73 +217,72 @@ li {
     padding: 5px 15px;
     background: #2ec2b0;
   } */
-  
-  .dictionary {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 4rem auto;
-    max-width: 90%;
-  }
-  
-  .dictionary > .term {
-    text-align: center;
-    max-width: 20rem;
-    margin-bottom: 3rem;
-    padding: 2rem;
-    border-radius: 3px;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: all 100ms ease-in-out;
-  }
-  
-  .dictionary > .term > dt {
-    margin-bottom: 1rem;
-  }
-  
-  dt {
-    color: #2ec2b0;
-    line-height: 1;
-  }
-  
-  dt span {
-    font-size: 200%;
-    font-weight: 900;
-  }
-  
-  .emoji {
-    margin: 0 auto 20px;
-    display: block;
-    font-size: 400%;
-  }
-  
-  dd {
-    font-size: 92.5%;
-    margin-left: 0;
-  }
-  
-  dd dt {
-    margin-top: 1rem;
-    margin-bottom: 0.25rem;
-    font-weight: 600;
-    font-size: inherit;
-  }
-  
-  dd dl {
-    font-size: 90%;
-    margin: 1rem auto 0 auto;
-    letter-spacing: 0.33px;
-    max-width: 15rem;
-  }
-  
-  dd dl .term {
-    margin-bottom: 1rem;
-  }
-  
 
-  /* COUNTER APP */
+.dictionary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem auto;
+  max-width: 90%;
+}
 
-  /* body {
+.dictionary > .term {
+  text-align: center;
+  max-width: 20rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: all 100ms ease-in-out;
+}
+
+.dictionary > .term > dt {
+  margin-bottom: 1rem;
+}
+
+dt {
+  color: #2ec2b0;
+  line-height: 1;
+}
+
+dt span {
+  font-size: 200%;
+  font-weight: 900;
+}
+
+.emoji {
+  margin: 0 auto 20px;
+  display: block;
+  font-size: 400%;
+}
+
+dd {
+  font-size: 92.5%;
+  margin-left: 0;
+}
+
+dd dt {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-size: inherit;
+}
+
+dd dl {
+  font-size: 90%;
+  margin: 1rem auto 0 auto;
+  letter-spacing: 0.33px;
+  max-width: 15rem;
+}
+
+dd dl .term {
+  margin-bottom: 1rem;
+}
+
+/* COUNTER APP */
+
+/* body {
     font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
     color: #fff;
     padding: 50px;
@@ -307,9 +312,9 @@ li {
     font-size: 50px;
   } */
 
-  /* TIME APP */
+/* TIME APP */
 
-  /* body {
+/* body {
     font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
     color: #fff;
     padding: 50px;

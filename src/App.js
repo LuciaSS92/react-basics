@@ -15,8 +15,7 @@ function App() {
           <Route exact path="/todo" element={<ToDoView />} />
           <Route exact path="/keeper" element={<KeeperView />} />
           <Route exact path="/emojipedia" element={<EmojiView />} />
-          <Route exact path="/hooks" element={<HookView />} />
-          {/* <Route exact path="/time" element={<TimeApp />} /> */}
+          <Route exact path="/hook" element={<HookView />} />        
         </Routes>
       </Router>
     </>

@@ -5,7 +5,7 @@ import EmojiApp from "../components/Emojipedia/EmojiApp";
 export default function EmojiView(){
     return(
         <>
-        <Header/>
+        <Header name="Emojipedia"/>
         <EmojiApp/>
         <Footer/>
         </>

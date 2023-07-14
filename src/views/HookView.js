@@ -5,7 +5,7 @@ import TimeApp from "../components/Hook/TimeApp";
 
 export default function HookView(){
     return(<>
-    <Header/>
+    <Header name="Counter and Time"/>
     <CounterApp/>
     <TimeApp/>
     <Footer/>

@@ -16,10 +16,8 @@ import emojipedia from "./emojipedia";
 function EmojiApp() {
     return (
         <>
-            <div className="emojiBody">
-                <h1>
-                    <span>emojipedia</span>
-                </h1>
+            <div className="emojiBody">             
+                    <span>emojipedia</span>          
                 <dl className="dictionary">
                     {/* {emojipedia.map(createEntry)} */}
                     {emojipedia.map((emojiTerm) => (

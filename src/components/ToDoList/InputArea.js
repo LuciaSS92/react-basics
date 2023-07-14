@@ -8,9 +8,9 @@ function InputArea(props) {
     setInputText(newValue);
   }
   return (
-    <div className="form">
+    <div className="todoForm">
       <input onChange={handleChange} type="text" value={inputText} />
-      <button
+      <button className="todoButton"
         onClick={() => {
           props.onAdd(inputText);
           setInputText("");
