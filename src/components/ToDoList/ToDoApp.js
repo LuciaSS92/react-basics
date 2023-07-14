@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
-import Header from "../Header"
-// import Footer from "../Footer";
 
 function ToDoApp() {
   const [items, setItems] = useState([]);
@@ -22,10 +20,8 @@ function ToDoApp() {
   }
 
   return (
-    <>
-      <Header />
+    <>  
       <div className="todoBody">
-
         <div className="container">
           <div className="heading">
             <h1>To-Do List</h1>
@@ -45,7 +41,7 @@ function ToDoApp() {
           </div>
         </div>
       </div>
-      {/* <Footer/> */}
+     
     </>
   );
 }

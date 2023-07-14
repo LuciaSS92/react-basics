@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
-import Header from "../Header"
-import Footer from "../Footer";
 
 function KeeperApp() {
 	const [notes, setNotes] = useState([]);
@@ -23,7 +21,7 @@ function KeeperApp() {
 
 	return (
 		<>
-			<Header />
+		
 			<div className="keeperBody">
 
 				<CreateArea onAdd={addNote} />
@@ -39,8 +37,7 @@ function KeeperApp() {
 					);
 				})}
 
-			</div>
-			<Footer />
+			</div>			
 		</>
 	);
 }

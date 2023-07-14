@@ -1,21 +1,22 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ToDoApp from './components/ToDoList/ToDoApp';
-import KeeperApp from "./components/Keeper/KeeperApp";
-import EmojiApp from './components/Emojipedia/EmojiApp';
-import CounterApp from './components/Counter/CounterApp';
-import TimeApp from './components/Counter/TimeApp/TimeApp';
+import KeeperView from './views/KeeperView';
+import ToDoView from './views/ToDoView';
+import EmojiView from './views/EmojiView';
+import HookView from './views/HookView';
+import HomeView from './views/HomeView';
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route exact path="/todo" element={<ToDoApp />} />
-          <Route exact path="/keeper" element={<KeeperApp />} />
-          <Route exact path="/emojipedia" element={<EmojiApp />} />
-          <Route exact path="/counter" element={<CounterApp />} />
-          <Route exact path="/time" element={<TimeApp />} />
+        <Route exact path='/' element={<HomeView/>}/>
+          <Route exact path="/todo" element={<ToDoView />} />
+          <Route exact path="/keeper" element={<KeeperView />} />
+          <Route exact path="/emojipedia" element={<EmojiView />} />
+          <Route exact path="/hooks" element={<HookView />} />
+          {/* <Route exact path="/time" element={<TimeApp />} /> */}
         </Routes>
       </Router>
     </>
