@@ -16,9 +16,9 @@ function TimeApp() {
   }
 
   return (
-    <div className="container">
-      <h1>{time}</h1>
-      <button onClick={consoleTime}>Get Time</button>
+    <div className="hookContainer">
+      <h1 className="hookh1">{time}</h1>
+      <button className="timeButton" onClick={consoleTime}>Get Time</button>
     </div>
   );
 }

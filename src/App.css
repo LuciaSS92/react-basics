@@ -32,8 +32,29 @@ footer {
   height: 2.5rem;  
 }
 
-footer p {
-  color: #ccc;
+
+/* HOME */
+
+.homeBody {
+  color: #ff6d60;
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  padding: 15px;
+  text-align: center;
+}
+
+.homeButton {
+   background-color: #98d8aa;
+  border: 0;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;;
 }
 
 /* KEEPER APP */
@@ -111,7 +132,7 @@ form.create-note button {
 
 /* TO DO LIST APP */
 
-.todoBody { 
+.todoBody {
   min-height: 70vh;
   padding: 1rem;
   box-sizing: border-box;
@@ -175,7 +196,7 @@ form.create-note button {
   text-decoration: none;
   padding-bottom: 3px;
   border-radius: 5px;
-  background-color: #F3E99F;
+  background-color: #f3e99f;
 }
 .todoButton span {
   background: #f1f5f8;
@@ -200,23 +221,8 @@ form.create-note button {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.666;
-  background: #c0d2d4;
   color: #555;
 }
-
-/* h1 {
-    font-weight: 900;
-    font-size: 500%;
-    text-align: center;
-    margin-top: 4rem;
-    color: #fff;
-    line-height: 1.2;
-  }
-  
-  h1 span {
-    padding: 5px 15px;
-    background: #2ec2b0;
-  } */
 
 .dictionary {
   display: flex;
@@ -242,7 +248,7 @@ form.create-note button {
 }
 
 dt {
-  color: #2ec2b0;
+  color: #98d8aa;
   line-height: 1;
 }
 
@@ -280,68 +286,50 @@ dd dl .term {
   margin-bottom: 1rem;
 }
 
-/* COUNTER APP */
+/* HOOK APPS */
 
-/* body {
-    font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
-    color: #fff;
-    padding: 50px;
-    width: 300px;
-    margin: 0 auto;
-    background-color: #374954;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 100px;
-  }
-  
-  .container {
-    margin: 60% auto;
-  }
-  
-  button {
-    display: inline-block;
-    background-color: #6bbe92;
-    border: 0;
-    width: 60px;
-    margin: 10px;
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    font-size: 50px;
-  } */
+.hookBody {
+  font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
 
-/* TIME APP */
+.hookh1 {
+  font-size: 100px;
+  color: #ff6d60;
+  margin-bottom: 3%;
+}
 
-/* body {
-    font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
-    color: #fff;
-    padding: 50px;
-    width: 300px;
-    margin: 0 auto;
-    background-color: #374954;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 100px;
-  }
-  
-  .container {
-    margin: 60% auto;
-  }
-  
-  button {
-    display: inline;
-    background-color: #6bbe92;
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 5px;
-    margin: 10px;
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    font-size: 50px;
-  }
-   */
+.hookContainer {
+  margin: 10% auto;
+}
+
+.counterButton {
+  margin-top: 2%;
+  display: inline-block;
+  background-color: #98d8aa;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 5px;
+  width: 60px;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.timeButton {
+  display: inline;
+  background-color: #98d8aa;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 5px;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 10px;
+}
